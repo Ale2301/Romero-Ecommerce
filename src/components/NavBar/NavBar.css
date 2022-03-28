@@ -1,0 +1,23 @@
+#navBar{
+    background-color: blue;
+}
+.tienda{
+    font-size: 30px;
+    text-align: center;
+    color: yellow;
+}
+#ordenNavBar{
+    display: flex;
+    justify-content: space-around;
+}
+.button{
+    transition: 0.1s;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+.button:hover{
+    transition: 0.5s;
+    font-size: 20px;
+    color: red;
+}
