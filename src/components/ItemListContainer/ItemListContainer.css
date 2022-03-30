@@ -1,0 +1,7 @@
+#catalogo{
+    color: yellow;
+    font-size: 70px;
+}
+#catalogo:hover{
+    color: white;
+}
