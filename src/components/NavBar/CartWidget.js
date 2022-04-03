@@ -3,7 +3,7 @@ const CartWidget = () =>{
     return(
         <div>
             <img id = "logo" src = {require('../../img/Carrito.ico')}  alt="carrito"/>
-            <p class="logoAcompaña">4</p>
+            <p className="logoAcompaña">4</p>
         </div>
         /*logoAcompaña va a ser el futuro contador :)*/
     )

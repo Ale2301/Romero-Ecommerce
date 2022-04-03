@@ -1,0 +1,26 @@
+#contenedorCounter{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.counter{
+    margin: 10px;
+    width: 12%;
+    text-align: center;
+    background-color: white;
+}
+button{
+    color: white;
+    background-color: black;
+}
+.agregarCarrito{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.stock{
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
