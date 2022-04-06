@@ -10,7 +10,7 @@ function App() {
     <div>
       <NavBar/>
       <div id = "body">
-        <ItemListContainer/>
+        <ItemListContainer greeting = {"Titulo provisional de la tienda!"}/>
         <Counter initial = {1} stock = {10} onAdd={handleOnAdd}/>
       </div>
     </div>

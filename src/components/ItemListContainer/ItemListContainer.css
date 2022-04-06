@@ -5,3 +5,9 @@
 #catalogo:hover{
     color: white;
 }
+#tituloTienda{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 100px;
+}

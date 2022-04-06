@@ -1,12 +1,12 @@
 import {useState,useEffect} from "react";
-import "./Counter.css"
+import "./Counter.css";
 const Counter = ({initial, stock, onAdd}) =>{
     const [count, setCount] = useState(initial)
     useEffect(() => {
         console.log("El componente ya funciona")
     }, [])
     const restar = () =>{
-        if (count <= 0){
+        if (count <= 1){
             console.log("se intento restar uno pero fallo")
         }
         else{
@@ -15,7 +15,7 @@ const Counter = ({initial, stock, onAdd}) =>{
         }
     }
     const sumar = () =>{
-        if (count === stock){
+        if (count >= stock){
             console.log("se intento sumar uno pero fallo")
         }
         else{
