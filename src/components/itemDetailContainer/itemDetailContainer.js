@@ -2,17 +2,17 @@ import ItemDetail from "../itemDetail/itemDetail"
 import { useEffect, useState } from "react"
 import { invocarProductosPorId } from "../asyncmock"
 const ItemDetailContainer = () =>{
-    const [id, setid] = useState([])
+    const [id, product] = useState([])
     useEffect (() =>{
         invocarProductosPorId(1).then(prod =>{
-            setid(prod.id)
+            product(prod)
         }).catch(error =>{
             console.log("error")
         })
     },[])
     return(
         <div className = "asd">
-            <ItemDetail id = {id}/>
+            <ItemDetail {...id}/>
         </div>
     )
 }
