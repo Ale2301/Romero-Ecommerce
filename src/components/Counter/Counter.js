@@ -1,6 +1,6 @@
 import {useState,useEffect} from "react";
 import "./Counter.css";
-const Counter = ({initial, stock, onAdd}) =>{
+const Counter = ({stockDisp,initial, onAdd}) =>{
     const [count, setCount] = useState(initial)
     useEffect(() => {
         console.log("El componente ya funciona")
@@ -15,7 +15,7 @@ const Counter = ({initial, stock, onAdd}) =>{
         }
     }
     const sumar = () =>{
-        if (count >= stock){
+        if (count >= stockDisp){
             console.log("se intento sumar uno pero fallo")
         }
         else{
@@ -33,7 +33,7 @@ const Counter = ({initial, stock, onAdd}) =>{
             <div className="agregarCarrito">
                 <button onClick={() => onAdd(count)}>Agregar al carrito</button>
             </div>
-            <div className="stock">Stock actual = {stock}</div>
+            <div className="stock">Stock actual = {stockDisp}</div>
         </div>
     )//COUNT = VARIABLE DEL CONTADOR
 }

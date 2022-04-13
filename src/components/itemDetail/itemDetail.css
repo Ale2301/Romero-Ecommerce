@@ -1,0 +1,19 @@
+.displayGrid{
+    display: grid;
+    justify-content: center;
+}
+.imagenDetail{
+    display: flex;
+    justify-content: start;
+}
+.itemDetail{
+    color: blue;
+    font-size: 20px;
+}
+.itemDetail span{
+    color: green;
+}
+.description{
+    color: white;
+    font-size: 15px;
+}
