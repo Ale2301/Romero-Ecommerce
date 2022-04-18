@@ -33,7 +33,6 @@ const Counter = ({stockDisp,initial, onAdd}) =>{
             <div className="agregarCarrito">
                 <button onClick={() => onAdd(count)}>Agregar al carrito</button>
             </div>
-            <div className="stock">Stock actual = {stockDisp}</div>
         </div>
     )//COUNT = VARIABLE DEL CONTADOR
 }

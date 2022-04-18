@@ -13,7 +13,7 @@ const ItemListContainer = (props) =>{
         }).catch(error => {
             console.log("no funciono")
         })
-    }, [categoryId],[productos])
+    }, [categoryId])
     return(
         <div>
             <div id="tituloTienda">{props.greeting}</div>

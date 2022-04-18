@@ -11,7 +11,7 @@ const productos = [
 const categories = [
     {id:"ipad",description:"ipad"},
     {id:"mac",description:"mac"},
-    {id:"watch",description:"watch"}
+    {id:"watch",description:"watch"},
 ]
 export const getCategories = () =>{
     return new Promise (resolve =>{
