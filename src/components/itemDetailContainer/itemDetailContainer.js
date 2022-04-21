@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { invocarProductosPorId } from "../asyncmock"
 import { useParams } from "react-router-dom"
 import "./itemDetailContainer.css"
-const ItemDetailContainer = () =>{
+const ItemDetailContainer = ({setCart, cart}) =>{
     const [id, product] = useState([])
     const {productId} = useParams()
     useEffect (() =>{
@@ -16,7 +16,7 @@ const ItemDetailContainer = () =>{
     return(
         <div>
             <div className="asd">
-                <ItemDetail {...id}/>
+                <ItemDetail {...id} setCart={setCart} cart ={cart}/>
             </div>
         </div>
     )

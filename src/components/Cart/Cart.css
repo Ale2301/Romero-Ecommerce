@@ -1,0 +1,48 @@
+.grillaCarrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+.grillaCarrito div span{
+    color: red;
+    text-decoration: underline;
+}
+.precioTotal{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+}
+.precioTotal span{
+    color: white;
+}
+.buttonCart{
+    cursor: pointer;
+    transition: 0.3s;
+    border: solid black 2px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.buttonCart:hover{
+    color: red;
+    transition: 0.3s;
+}
+.clear{
+    position: fixed;
+    left: 990px;
+    top: 640px;
+    display: block;
+    text-align: right;
+}
+#titleCarrito{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    color: yellow;
+}

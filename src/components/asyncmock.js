@@ -31,7 +31,7 @@ export const invocarProductosPorId = (id) =>{
     return new Promise (resolve =>{
         setTimeout(() => {
             resolve(productos.find(prod => prod.id === parseInt(id)))
-            console.log(id)
+            console.log("id del producto clickeado: " + id)
         }, 1);
     })
 }
