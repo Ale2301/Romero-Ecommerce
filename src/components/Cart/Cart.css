@@ -46,3 +46,17 @@
     font-size: 100px;
     color: yellow;
 }
+.carritoVacio{
+    font-size: 40px;
+    color: blue;
+    text-align: center;
+}
+.clickCarritoVacio{
+    color: yellow;
+    text-decoration: none;
+}
+.clickCarritoVacio:hover{
+    transition: .4s;
+    font-size: 45px;
+    color: white;
+}

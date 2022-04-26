@@ -1,4 +1,4 @@
-import ItemDetail from "../itemDetail/itemDetail"
+import ItemDetail from "../itemDetail/ItemDetail"
 import { useEffect, useState } from "react"
 import { invocarProductosPorId } from "../asyncmock"
 import { useParams } from "react-router-dom"
