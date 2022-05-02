@@ -18,9 +18,21 @@ button{
     margin-top: 20px;
     justify-content: center;
 }
+.redCounter{
+    background-color: red;
+    color: red;
+    transition: 1s;
+}
+.red{
+    color: red;
+    transition: 1s;
+}
 .stock{
-    color: white;
     font-size: 50px;
     display: flex;
     justify-content: center;
+}
+.white{
+    color: white;
+    transition: 1s;
 }
