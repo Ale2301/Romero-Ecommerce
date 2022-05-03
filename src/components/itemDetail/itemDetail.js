@@ -4,10 +4,7 @@ import {useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import CartContext from "../CartContext/CartContext";
 const ItemDetail = ({name, price,id,img, description,stockDisp}) =>{
-    const {isInCart} = useContext(CartContext)
-    const {addItem} = useContext(CartContext)
-    const {sumarItem} = useContext(CartContext)
-    const {checkStock} = useContext(CartContext)
+    const {isInCart,addItem,sumarItem,checkStock} = useContext(CartContext)
     const [toCart, setToCart] = useState (0)
     const stockActual = checkStock(stockDisp,id)
     const handleOnAdd = (count) =>{

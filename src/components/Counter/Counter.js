@@ -1,16 +1,12 @@
-import {useState,useEffect} from "react";
+import {useState} from "react";
 import "./Counter.css";
 const Counter = ({stockDisp,initial, onAdd}) =>{
     const [count, setCount] = useState(initial)
     const [color, setColor] = useState("white")
     const [counterBack, setCounterBack] = useState("counter")
     let stockActual = ("Stock actual: " + stockDisp)
-    useEffect(() => {
-        console.log("El componente ya funciona")
-    }, [])
     const restar = () =>{
         if (count <= 1){
-            console.log("se intento restar uno pero fallo")
             setCounterBack("counter redCounter")
             setTimeout(() => {
                 setCounterBack("counter")
@@ -23,7 +19,6 @@ const Counter = ({stockDisp,initial, onAdd}) =>{
     }
     const sumar = () =>{
         if (count >= stockDisp){
-            console.log("se intento sumar uno pero fallo")
             setColor("red")
             setTimeout(() => {
                 setColor("white")
@@ -48,6 +43,6 @@ const Counter = ({stockDisp,initial, onAdd}) =>{
                 <div className="stock">{stockActual}</div>
             </div>
         </div>
-    )//COUNT = VARIABLE DEL CONTADOR
+    )
 }
 export default Counter

@@ -35,7 +35,7 @@
 }
 .clear{
     position: fixed;
-    left: 990px;
+    right: 990px;
     top: 640px;
     display: block;
     text-align: right;
@@ -59,4 +59,18 @@
     transition: .4s;
     font-size: 45px;
     color: white;
+}
+.buttonOrden{
+    left: 940px;
+    top: 605px;
+    position:fixed;
+    cursor: pointer;
+    transition: 0.5s;
+    border: solid blue 2px;
+    color: yellow;
+    font-size: 40px;
+}
+.buttonOrden:hover{
+    color: white;
+    transition: 0.5s;
 }
