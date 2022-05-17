@@ -6,7 +6,7 @@ import {writeBatch, collection, getDocs, query, where, documentId, addDoc} from 
 import { firestoreDb } from "../../services/firebase";
 
 const Cart = () =>{
-    const {cart, removeItem, clearCart,chequearLogin,chequearDatos} = useContext(CartContext)
+    const {precioFinal,cart, removeItem, clearCart,chequearLogin,chequearDatos} = useContext(CartContext)
     const [loading, setLoading] = useState(false)
     const [mensaje, setMensaje] = useState("Click aqui para ir a elegir productos")
     const [mensajeCompra, setMensajeCompra] = useState ("crear orden de compra")
@@ -21,7 +21,7 @@ const Cart = () =>{
                     phone: comprador.phone,
                     email: comprador.mail,
                 },
-                total: precioFinal,
+                total: costo,
                 date: new Date()
             }
             console.log(orden)
@@ -72,11 +72,7 @@ const Cart = () =>{
             <div className = "cargando">Cargando, por favor espere...</div>
         )
     }
-    let precioFinal = 0;
-    cart.forEach(prod => {
-        precioFinal += prod.price * prod.quantity
-        console.log(precioFinal)
-    });
+    let costo = precioFinal()
     
     return(
         <div>
@@ -118,15 +114,15 @@ const Cart = () =>{
                     }
                 </div>
             )}
-            {precioFinal === 0 ? 
+            {costo === 0 ? 
                 <div className = "carritoVacio">
                     <div>¡Aun no hay items en el carrito!</div>
                     <Link className = "clickCarritoVacio" to = "/">{mensaje}</Link>
                 </div> : 
                 <div className = "precioTotal">
-                    Precio total a pagar por estos productos: <span>{precioFinal}</span>
+                    Precio total a pagar por estos productos: <span>{costo}</span>
                 </div>}
-            {precioFinal !== 0 ? 
+            {costo !== 0 ? 
                 <div>
                     <div className = "buttonCart clear" onClick={clearCart}>Vaciar el carrito</div>
                     <div className="buttonOrden" onClick={crearOrdenDeCompra}>{mensajeCompra}</div>
