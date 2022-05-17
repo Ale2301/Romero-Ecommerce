@@ -2,7 +2,7 @@
 Proyecto realizado para simular un e-commerce genérico para el curso de ReactJS. Simula navegación y un sistema de compra hasta el punto donde se realiza la órden de compra, requiriendo de un usuario y su contraseña.
 
 
-**Alejo Romero**
+**por Alejo Romero**
 
 ## Métodos de ejecución:
 Para acceder al proyecto mediante descarga y ejecutarlo, deberás:
@@ -99,3 +99,4 @@ Este contiene el elemento *"Cart"*, el cual posee una lista con todos los elemen
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/91702853/168901664-5dbef8e0-2fd4-40e4-96ae-a7ad0536be89.gif)
 
+Muchas gracias por tomarte la molestia de leer todo este texto! :)
