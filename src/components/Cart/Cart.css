@@ -19,27 +19,6 @@
 .precioTotal span{
     color: white;
 }
-.buttonCart{
-    cursor: pointer;
-    transition: 0.3s;
-    border: solid black 2px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-.buttonCart:hover{
-    color: red;
-    transition: 0.3s;
-}
-.clear{
-    position: fixed;
-    right: 990px;
-    top: 640px;
-    display: block;
-    text-align: right;
-}
 #titleCarrito{
     display: flex;
     justify-content: center;
@@ -60,6 +39,28 @@
     font-size: 45px;
     color: white;
 }
+.clear{
+    right: 1200px;
+    position: absolute;
+    display: block;
+    text-align: right;
+}
+.buttonCart{
+    left: 0px;
+    top: 168px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: solid black 2px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+}
+.buttonCart:hover{
+    color: red;
+    transition: 0.3s;
+}
 .buttonOrden{
     left: 940px;
     top: 605px;
@@ -73,4 +74,7 @@
 .buttonOrden:hover{
     color: white;
     transition: 0.5s;
+}
+img{
+    margin: 0;
 }

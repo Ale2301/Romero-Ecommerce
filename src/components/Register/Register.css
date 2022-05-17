@@ -1,0 +1,30 @@
+#registerContainer{
+    display:flex;
+    justify-content: center;
+}
+label{
+    display: block;
+}
+.tituloRegister{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.formRegister{
+    text-align: center;
+    width: 534px;
+    color: yellow;
+    font-size: 25px;
+}
+.formRegister input{
+    font-size: 25px;
+    margin-top: 30px;
+    width: 100%;
+    height: 8%;
+}
+.registrado{
+    font-size: 100px;
+    color: yellow;
+}
+.aProductos{
+    color: blue;
+}

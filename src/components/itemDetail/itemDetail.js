@@ -10,7 +10,6 @@ const ItemDetail = ({name, price,id,img, description,stockDisp}) =>{
     const handleOnAdd = (count) =>{
         setToCart(count)
         if (isInCart(id)){
-            console.log(true)
             sumarItem(count,id)
         }
         else{
@@ -18,7 +17,6 @@ const ItemDetail = ({name, price,id,img, description,stockDisp}) =>{
             const objProd = {
                 id, name, price, img
             }
-            console.log (objProd)
             addItem({...objProd, quantity:count})
         }
     }

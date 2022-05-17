@@ -1,6 +1,6 @@
 #navBar{
     background-color: blue;
-    min-height: 20vh;
+    min-height: 30vh;
 }
 #mainHeader{
     display: grid;
@@ -24,7 +24,7 @@
     justify-content: space-around;
 }
 .button{
-    font-size: 30px;
+    font-size: 50px;
     transition: 0.1s;
     display: inline-block;
     text-decoration: none;
@@ -35,4 +35,11 @@
     font-size: 50px;
     color: red;
     cursor: pointer
+}
+.active{
+    transition: 0.5s;
+    font-size: 50px;
+    color: red;
+    cursor: none;
+    pointer-events: none;
 }

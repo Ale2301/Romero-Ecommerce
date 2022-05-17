@@ -10,6 +10,7 @@
     background-color: white;
 }
 button{
+    width: 15px;
     color: white;
     background-color: black;
 }
@@ -17,6 +18,10 @@ button{
     display: flex;
     margin-top: 20px;
     justify-content: center;
+}
+.agregarCarrito button{
+    height: 35px;
+    width: 70px;
 }
 .redCounter{
     background-color: red;

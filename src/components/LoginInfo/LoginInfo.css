@@ -1,0 +1,42 @@
+#loginContainer{
+    margin-top: 0px;
+    margin-right: 80px;
+    margin-left: 190px;
+}
+.input{
+    width: 100px;
+    align-items: center;
+}
+.password{
+    margin-right: 50px;
+}
+#login .redLogin{
+    color:red;
+}
+#password .redPassword{
+    color: red;
+}
+.submit{
+    position: absolute;
+    right: 90px;
+    top: 45px;
+}
+.cargandoNavbar{
+    color: yellow;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-right: 80px;
+    margin-left: 190px;
+    padding-bottom: 85px;
+}
+.errorDatos{
+    color: white;
+}
+.logueado{
+    color: white;
+    height: 130px;
+    font-size: 40px;
+}
+.logueado span{
+    color: yellowgreen;
+}

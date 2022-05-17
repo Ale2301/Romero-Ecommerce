@@ -4,6 +4,7 @@ import {Link, NavLink} from 'react-router-dom'
 import { useState,useEffect } from 'react'
 import { firestoreDb } from '../../services/firebase'
 import { getDocs, collection } from 'firebase/firestore'
+import LoginInfo from '../LoginInfo/LoginInfo'
 const NavBar = () => {
     const [categories, setCategories] = useState([])
     useEffect (()=>{
@@ -19,9 +20,10 @@ const NavBar = () => {
             <div id = "mainHeader">
                 <CartWidget/>
                 <Link to="/" className="tienda">Tienda la tiendita</Link>
+                <LoginInfo/>
             </div>
             <div id = "ordenNavBar">
-                {categories.map(cat => <NavLink className = "button" key={cat.id} to={`/category/${cat.id}`}>{cat.descripcion}</NavLink>)}
+                {categories.map(cat => <NavLink className = "button" key={cat.id} to={"/category/"+cat.id}>{cat.descripcion}</NavLink>)}
             </div>
         </nav>
     )

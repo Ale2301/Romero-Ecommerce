@@ -1,4 +1,9 @@
-#body{
+*{
+  margin: 0;
+  padding: 0;
+}
+#root{
   background-color: green;
+  background-size: cover;
   min-height: 100vh;
 }
