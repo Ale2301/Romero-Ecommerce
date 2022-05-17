@@ -76,10 +76,10 @@ Este proyecto usa dos collections que inician sin existir, y el mismo proyecto e
   - *},*
   - *total : number*
 2. **users** : Los usuarios registrados en el sitio.
-  - *mail : string*
-  - *password : string*
-  - *phone : number*
-  - *username : string*
+  - *mail : string,*
+  - *password : string,*
+  - *phone : number,*
+  - *username : string,*
 
 
 # ¿Cómo funciona?
@@ -94,3 +94,8 @@ Del lado derecho de los botones se encuentra el *"LoginInfo"*, en el cual se pod
 
 Existen dos maneras de ir a la ruta "/cart": Una es clickeando en el componente *"CartWidget"* y otra es clickeando el botón a continuación de "agregar al carrito". 
 Este contiene el elemento *"Cart"*, el cual posee una lista con todos los elementos ya en el carrito, sus cantidades, especificaciones, el precio final a pagar y sus botones para eliminar el ítem elegido, eliminar todo el contenido del carrito y, porsupuesto, generar la órden de compra(Para todo esto debe haber al menos un ítem en el carrito). Al generar la órden de compra, primero se revisa que el usuario se encuentre logueado. En el caso de que no, la órden se cancela. En el caso de que si, comienza el proceso: Primero crea la órden (FirestoreDb,"orders") con el carrito,la información del comprador, el precio total,fecha y hora. Luego hace una revisada rápida de que la órden pedida no supere el stock disponible (Para evitar posibles errores) y guarda esa información. A continuación se actualiza el stockDisp al nuevo valor (FirestoreDb,"products") para restar los de la órden (En el caso de que la órden no supere el stock. Si lo hace, la petición se deniega). Si todo está ok, la orden se pasa al Firestore y se setea un mensaje de que la compra fue exitosa. Si ocurre un error, se setea un mensaje de error.
+
+# Así se ve el proyecto!
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/91702853/168901664-5dbef8e0-2fd4-40e4-96ae-a7ad0536be89.gif)
+
